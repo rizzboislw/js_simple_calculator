@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #C973FF, #AEBAF8);
+    background-repeat: no-repeat;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainContainer {
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    padding: 1rem;
+    border: 0.2rem #000 solid;
+    background: #000;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-gap: 2%
+}
+
+#inputBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#numbersBlock {
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#inputScreen {
+    width: 100%;
+    height: 90%;
+    border: #000 solid 1px;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: right;  
+}
+
+#inputScreen:focus {
+    outline: none;
+    
+}
+
+.NumberButtons {
+    background: #FFF;
+    font-size: 3rem;
+    border: 0.15rem solid #000; 
+}
+
+.NumberButtons:nth-child(1) {
+    grid-column: 1/span 2;
+    background: #F0AC23;
+}
+
+.NumberButtons:nth-child(2) {
+    background: #EF4321;
+}
+
+.NumberButtons:nth-child(18) {
+    grid-column: 3/span 2;
+    background: #67EF5D;
+}
+
+.NumberButtons:hover {
+    cursor: pointer;
+}
+
+.NumberButtons:active {
+    transform: scale(0.99);
+}
+
+.NumberButtons:nth-child(3),.NumberButtons:nth-child(7),.NumberButtons:nth-child(11),.NumberButtons:nth-child(15) {
+    background-color: #A0A0A0;
+}
+
+
+
+
+
+
+  
+
+
+    
+    
+
